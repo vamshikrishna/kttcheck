@@ -12,7 +12,6 @@
   --gradient: #4f2ae6;
   /* --main-color: #5a31ff; */
   --main-color: #7857fe;
-  --white: #ffffff;
   --color-1: #e91e63;
   --color-2: #f5ae10;
   --color-3: #09d69c;
@@ -27,12 +26,6 @@
   --black-100: #f7f7f7;
   --black-000: #ffffff;
   --black-alpha-100: rgba(0, 0, 0, 0.05);
-  --hr-white: #ffffff;
-  /* --hr-shadow: 0 5px 15px rgba(0, 0, 0, 0.5); */
-  --hr-shadow: 0 5px 20px rgb(0, 0, 0);
-  --main-color-op: #7857fec0;
-  /* --bg-dark-op: #45474b; */
-  --bg-dark-op: #35363a;
 }
 
 * {
@@ -69,7 +62,6 @@ body {
   overflow-x: hidden;
   background-color: #ffffff;
   line-height: 1.5;
-  -webkit-font-smoothing: antialiased;
 }
 
 body.dark {
@@ -82,10 +74,6 @@ body.dark {
   --black-alpha-100: rgba(255, 255, 255, 0.05);
   --black-900: #ffffff;
   --black-400: #bbbbbb;
-  --white: #ccc;
-  --hr-white: #666666;
-  --hr-shadow: 0 5px 20px rgba(255, 255, 255);
-  --main-color-op: var(--bg-dark-op);
 }
 
 img {
@@ -95,16 +83,6 @@ img {
 
 ul {
   list-style: none;
-}
-
-.custom-hr {
-  margin: 0 auto;
-  width: 90%;
-  background-color: var(--hr-white);
-  /* padding-bottom: 1px; */
-  box-shadow: var(--hr-shadow);
-  /* border-top: 1px solid var(--main-color); */
-  /* outline: none; */
 }
 
 .btn-1,
@@ -244,10 +222,6 @@ ul {
 
 .section-title h2 {
   font-size: 40px;
-}
-
-.section-title h2,
-.section-title-inner h2 {
   color: var(--black-900);
   font-weight: 700;
   text-transform: capitalize;
@@ -255,17 +229,8 @@ ul {
   margin: 0;
 }
 
-.section-title h2 span,
-.section-title-inner h2 span {
+.section-title h2 span {
   color: var(--main-color);
-}
-
-.section-title-inner {
-  margin: 2rem 0 0.5rem;
-}
-
-.section-title-inner h2 {
-  font-size: 1.8rem;
 }
 
 .owl-carousel .owl-dots {
@@ -285,23 +250,6 @@ ul {
 
 .owl-carousel button.owl-dot.active {
   background-color: var(--main-color);
-}
-
-.owl-nav {
-  text-align: center;
-  font-size: 3rem;
-  color: var(--main-color);
-  margin: 20px 0 -20px;
-}
-
-.owl-prev {
-  /* padding: 0 5px !important; */
-  margin: 0 10px;
-}
-
-.owl-next {
-  /* padding: 0 5px !important; */
-  margin: 0 10px;
 }
 
 /*------ Preloader ------*/
@@ -327,64 +275,11 @@ ul {
   animation: zoomInOut_01 1s ease infinite;
 }
 
-/*------ Header topbar ------*/
-
-/* fixed header change on scroll in main.js */
-/* if possible scroll > some px like that */
-.padding {
-  top: 1.5rem;
-}
-
-header.header-topbar {
-  background: var(--main-color-op);
-  color: #fefefe;
-  /* font-family: "Raleway-semibold"; */
-  padding: 0.3rem 0;
-  position: relative;
-  /* margin-bottom: 1rem; */
-}
-
-header.header-topbar .wrapper-topbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
-  padding: 0 15px;
-  margin: 0 auto;
-}
-
-header.header-topbar .contact-topbar {
-  display: flex;
-  align-items: center;
-}
-
-header.header-topbar .contact-topbar > div a {
-  font-size: 0.9rem;
-  color: #fefefe;
-  text-decoration: none;
-  letter-spacing: 0.4px;
-}
-
-.wrapper-topbar .social-icons i {
-  font-size: 0.9rem;
-  margin-right: 0.6rem;
-  cursor: pointer;
-}
-header.header-topbar .contact-topbar .divider {
-  padding: 0 1rem;
-}
-header.header-topbar .contact-topbar > div a i {
-  font-size: 0.9rem;
-  margin-right: 0.5rem;
-}
-
 /*------ navbar ------ */
 .navbar {
   background-color: transparent;
   padding: 20px 0;
   transition: all 0.5s ease;
-  /* top: 0.75rem; */
-  /* top: 1.5rem; */
 }
 
 .navbar.navbar-shrink {
@@ -473,27 +368,12 @@ header.header-topbar .contact-topbar > div a i {
   z-index: 1;
   overflow-x: hidden;
   pointer-events: all;
-  /* background-image: */
-  /* linear-gradient(to bottom, rgb(120, 87, 254, 0.2), rgb(43, 44, 47, 0.9)), */
-  /* url('../image/bg/showcase-bg\ -\ Copy.png');
+  /* background-image:
+    linear-gradient(to bottom, rgb(120, 87, 254, 0.2), rgb(43, 44, 47, 0.9)),
+    url('../image/bg/bg-chart-3.png');
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center -50%;
-    background-blend-mode: soft-light; */
-  /* background: url('../image/bg/showcase-bg.png'); */
-
-  /* background-attachment: fixed; */
-
-  /* background-blend-mode: color-burn; */
-  /* background-blend-mode: color-dodge; */
-  /* background-blend-mode: hard-light; */
-  /* background-blend-mode: lighten; */
-
-  /* background-blend-mode: luminosity; */
-  /* ^^^ Changing targit hit text  */
-
-  /* background-blend-mode: multiply; */
-  /* background-blend-mode: screen; */
+    background-position: center center; */
 }
 
 /* .home .home-youtube {
@@ -643,10 +523,6 @@ header.header-topbar .contact-topbar > div a i {
   line-height: 50px;
 }
 
-/* .home-img {
-  animation: bounceTop_01 3s ease infinite;
-} */
-
 .home-img img {
   /* max-width: 250px; */
   width: 100%;
@@ -694,45 +570,15 @@ header.header-topbar .contact-topbar > div a i {
   } */
 
 /* Kubera Moto Start */
-
-.kubera-moto .kubera-moto-content {
-  text-align: center;
+.kubera-moto .kubera-moto-content p {
   color: var(--black-900);
 }
 
 /* Kubera Moto End */
 
 /* Who We Are Start */
-.who-we-are-content {
-  background-color: var(--black-100);
-  /* text-align: ; */
-}
-
-/* .who-we-are .who-we-are-content { */
-/* text-align: justify; */
-/* } */
-
-.who-we-are-content p {
+.who-we-are .who-we-are-content p {
   color: var(--black-900);
-  line-height: 28px;
-  text-align: justify;
-}
-
-.who-we-are-content p:not(:first-child, :last-child) {
-  margin: 1.5rem 0;
-}
-
-/* .who-we-are-content p:nth-child(2) {
-  margin: 30px 0;
-} */
-
-.who-we-are-content p i {
-  padding: 3px;
-  margin-right: 5px;
-  color: #fff;
-  background-color: var(--main-color);
-  border-radius: 50%;
-  margin-left: -1.8rem;
 }
 
 /* Who We Are End */
@@ -740,12 +586,11 @@ header.header-topbar .contact-topbar > div a i {
 /* Counter Section Start */
 #counter {
   width: 100%;
-  background: linear-gradient(180deg, var(--bg-dark) 50%, var(--white) 50%);
+  background: linear-gradient(180deg, var(--bg-dark) 50%, #fff 50%);
   /* background-color: #000; */
   display: flex;
   justify-content: center;
-  margin-top: 1rem;
-  padding: 3rem 0 1rem 0;
+  padding: 3rem 0;
   text-align: center;
 }
 
@@ -808,6 +653,7 @@ header.header-topbar .contact-topbar > div a i {
   opacity: 0.9;
 }
 
+
 /* Add Blur Shine effect as seen in youtube video contact page designed channel I think */
 
 .counter-box .count i {
@@ -826,11 +672,6 @@ header.header-topbar .contact-topbar > div a i {
 .counter-box .count .number {
   font-size: 1.2rem;
   color: var(--main-color);
-  /* transition: font-weight 3.5s ease-in; */
-}
-
-.counter-box .count .number::after {
-  content: "+";
 }
 
 .counter-box .count .number span {
@@ -923,25 +764,6 @@ header.header-topbar .contact-topbar > div a i {
 }
 
 /*------ Features Section ------*/
-
-/* for equal height of the box start */
-.owl-carousel .owl-stage {
-  display: flex;
-}
-.feature-item {
-  display: flex;
-  flex: 1 0 auto;
-  height: 100%;
-}
-.feature-box {
-  position: relative;
-  overflow: hidden;
-  display: flex;
-  flex-direction: column;
-  align-items: stretch;
-}
-/* for equal height of the box end */
-
 .features .feature-item {
   box-shadow: var(--shadow-black-100);
   margin: 15px;
@@ -951,9 +773,8 @@ header.header-topbar .contact-topbar > div a i {
   position: relative;
   z-index: 1;
   overflow: hidden;
-
-  /* width: 300px; */
-  min-height: 290px;
+  /* width: 500px; */
+  /* height: 500px; */
 }
 
 .features .feature-item::before,
@@ -1017,9 +838,9 @@ header.header-topbar .contact-topbar > div a i {
   opacity: 0;
 }
 
-.features .feature-item:hover .icon i {
+.features .feature-item:hover .icon {
   color: #ffffff;
-  font-size: 1.5rem;
+  font-size: 20px;
 }
 
 .features .feature-item:hover .icon::before {
@@ -1030,8 +851,6 @@ header.header-topbar .contact-topbar > div a i {
 
 .features .feature-item .icon i {
   line-height: 60px;
-  font-size: 2rem;
-  transition: all 0.5s ease;
 }
 
 .features .feature-item h3 {
@@ -1084,7 +903,7 @@ header.header-topbar .contact-topbar > div a i {
   text-align: center;
   box-shadow: var(--shadow-black-100);
   border-radius: 10px;
-  margin-top: 1.5rem;
+  margin-top: 30px;
 }
 
 .fun-fact-item h3 {
@@ -1134,16 +953,8 @@ header.header-topbar .contact-topbar > div a i {
 
 /*------ App Download Section ------*/
 .app-download {
-  /* background-image: url("../image/bg/pexels-rodnae-productions-7948063.jpg"); */
-  background-image: url("../image/bg/bg-chart-1.jpg");
-  /* background-image: url("../image/bg/bg-chart-3.png"); */
-  /* background-image: url("../image/bg/pexels-rodnae-productions-7948063.jpg"); */
-
-  /* background-image: url("../image/bg/showcase-bg\ -\ Copy\ -\ Copy.png");
-  background-position: center -50%; */
-
-  background-position: center -10%;
-  background-size: cover;
+  background-image: url("../image/download-app-bg.jpg");
+  background-position: center top;
   background-attachment: fixed;
   background-repeat: no-repeat;
   position: relative;
@@ -1589,10 +1400,6 @@ header.header-topbar .contact-topbar > div a i {
   margin: 0;
 }
 
-.footer-col ul li {
-  display: flex;
-}
-
 .footer-col ul li:not(:last-child) {
   margin-bottom: 10px;
 }
@@ -1709,7 +1516,7 @@ header.header-topbar .contact-topbar > div a i {
     background-color: var(--main-color);
   }
 
-  /* .home-img .circle {
+  .home-img .circle {
     height: 320px;
     width: 320px;
   }
@@ -1718,7 +1525,7 @@ header.header-topbar .contact-topbar > div a i {
     top: 18px;
     left: 18px;
     transform-origin: 142px 142px;
-  } */
+  }
 
   .home-text h1 {
     font-size: 40px;
@@ -1744,25 +1551,7 @@ header.header-topbar .contact-topbar > div a i {
   }
 }
 
-@media (max-width: 768px) {
-  header.header-topbar .wrapper-topbar {
-    padding: 0 10px;
-  }
-
-  header.header-topbar .contact-topbar > div a {
-    font-size: 0.8rem;
-    /* letter-spacing: 0.4px; */
-  }
-
-  .wrapper-topbar .social-icons i {
-    margin-right: 0.4rem;
-    font-size: 0.8rem;
-  }
-  header.header-topbar .contact-topbar > div i {
-    margin-right: 0.2rem;
-    font-size: 0.8rem;
-  }
-
+@media (max-width: 770px) {
   .home-text {
     margin-bottom: 80px;
   }
@@ -1795,14 +1584,7 @@ header.header-topbar .contact-topbar > div a i {
   }
 }
 
-@media (max-width: 576px) {
-  .padding {
-    top: 0;
-  }
-  .header-topbar {
-    display: none;
-  }
-
+@media (max-width: 575px) {
   .home-text h1 {
     font-size: 30px;
   }
@@ -1811,18 +1593,7 @@ header.header-topbar .contact-topbar > div a i {
     font-size: 16px;
   }
 
-  .fun-facts-text {
-    margin: 0 30px;
-  }
-
   .section-title h2 {
     font-size: 30px;
-  }
-}
-
-@media (max-width: 990px) and (min-width: 768px) {
-  .home-img img {
-    position: relative;
-    top: -60px;
   }
 }
