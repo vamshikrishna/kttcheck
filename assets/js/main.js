@@ -1,7 +1,7 @@
-$(window).on("load", () => {
+//$(window).on("load", () => {
   // Preloader
-  $(".preloader").fadeOut("slow");
-});
+ // $(".preloader").fadeOut("slow");
+//});
 
 $(document).ready(() => {
   // navbar Shrink
